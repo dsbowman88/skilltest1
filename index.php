@@ -10,9 +10,6 @@ foreach ($invoer as $inv){
 sort($lijst);
 foreach ($lijst as $regel){
     fwrite($outfile, $regel['naam'] . "; " . $regel['score'] . "\n");
+    echo $regel['naam'] . "; " . $regel['score'] . "<br>";
 }
 fclose($outfile);
-
-echo $lijst[0]['naam'] . "; " . $lijst[0]['score'] . "<br>";
-echo $lijst[1]['naam'] . "; " . $lijst[1]['score'] . "<br>";
-echo $lijst[2]['naam'] . "; " . $lijst[2]['score'] . "<br>";
