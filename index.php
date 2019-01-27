@@ -8,9 +8,9 @@ foreach ($invoer as $inv){
     $lijst[] = ['naam' => $naam, 'score' => $score];
 }
 sort($lijst);
-fwrite($outfile, $lijst[0]['naam'] . "; " . $lijst[0]['score'] . "\n");
-fwrite($outfile, $lijst[1]['naam'] . "; " . $lijst[1]['score'] . "\n");
-fwrite($outfile, $lijst[2]['naam'] . "; " . $lijst[2]['score'] . "\n");
+foreach ($lijst as $regel){
+    fwrite($outfile, $regel['naam'] . "; " . $regel['score'] . "\n");
+}
 fclose($outfile);
 
 echo $lijst[0]['naam'] . "; " . $lijst[0]['score'] . "<br>";
