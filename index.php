@@ -12,3 +12,7 @@ fwrite($outfile, $lijst[0]['naam'] . "; " . $lijst[0]['score'] . "\n");
 fwrite($outfile, $lijst[1]['naam'] . "; " . $lijst[1]['score'] . "\n");
 fwrite($outfile, $lijst[2]['naam'] . "; " . $lijst[2]['score'] . "\n");
 fclose($outfile);
+
+echo $lijst[0]['naam'] . "; " . $lijst[0]['score'] . "<br>";
+echo $lijst[1]['naam'] . "; " . $lijst[1]['score'] . "<br>";
+echo $lijst[2]['naam'] . "; " . $lijst[2]['score'] . "<br>";
